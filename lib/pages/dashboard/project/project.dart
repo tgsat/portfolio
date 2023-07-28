@@ -26,9 +26,14 @@ class RecentProjects extends StatelessWidget {
         Padding(
           padding: EdgeInsets.symmetric(
               horizontal: AppSize.isMobile(context) ? 40 : 80),
-          child: const Text(
+          child: Text(
             Dictionary.projectDescription,
-            style: TextStyle(fontSize: 16),
+            style: Fonts(
+              size: 16,
+              height: 1.0,
+              color: AppColor.articleText.withOpacity(0.8),
+              fontWeight: FontWeight.w500,
+            ).titleOpenSans,
             textAlign: TextAlign.center,
           ),
         ),
@@ -85,6 +90,24 @@ class RecentProjects extends StatelessWidget {
             ),
             ProjectCard(
               data: ProjectConstants.projects[8],
+              press: () {
+                js.context.callMethod('open', [Url.hsePln]);
+              },
+            ),
+            ProjectCard(
+              data: ProjectConstants.projects[9],
+              press: () {
+                js.context.callMethod('open', [Url.hsePln]);
+              },
+            ),
+            ProjectCard(
+              data: ProjectConstants.projects[10],
+              press: () {
+                js.context.callMethod('open', [Url.hsePln]);
+              },
+            ),
+            ProjectCard(
+              data: ProjectConstants.projects[11],
               press: () {
                 js.context.callMethod('open', [Url.hsePln]);
               },

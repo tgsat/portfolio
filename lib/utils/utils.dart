@@ -13,3 +13,4 @@ export 'package:portfolio/utils/widgets/button/general_button.dart';
 export 'package:portfolio/utils/widgets/button/button_opacity.dart';
 export 'package:portfolio/utils/widgets/card/general_card.dart';
 export 'package:portfolio/utils/widgets/constans/readmore.dart';
+export 'package:portfolio/utils/widgets/pages/alert_pages.dart';

@@ -87,6 +87,13 @@ class Skill extends StatelessWidget {
                 url:
                     'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png',
               )),
+          Tooltip(
+              message: "My Sql Server",
+              child: SkillWidget.card(
+                context,
+                url:
+                    'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Database-mysql.svg/1448px-Database-mysql.svg.png',
+              )),
         ],
       ),
     );

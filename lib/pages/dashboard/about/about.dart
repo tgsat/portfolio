@@ -69,11 +69,16 @@ class About extends StatelessWidget {
                                 size: 24,
                                 fontWeight: FontWeight.w700,
                               ).titleOpenSans)),
-                      const Padding(
-                        padding: EdgeInsets.all(8.0),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
                         child: Text(
                           Dictionary.aboutDescription,
-                          style: TextStyle(fontSize: 16),
+                          style: Fonts(
+                            size: 16,
+                            height: 1.0,
+                            color: AppColor.articleText.withOpacity(0.8),
+                            fontWeight: FontWeight.w500,
+                          ).titleOpenSans,
                         ),
                       ),
                       Padding(

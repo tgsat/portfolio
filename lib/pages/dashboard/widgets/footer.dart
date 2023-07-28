@@ -20,6 +20,7 @@ class Footer extends StatelessWidget {
                 onTap: () {},
                 child: const Text('tgsatt',
                     style: TextStyle(
+                      height: 1,
                       color: AppColor.primaryColor,
                     )),
               ),

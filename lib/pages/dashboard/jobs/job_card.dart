@@ -30,8 +30,10 @@ class JobCard extends StatelessWidget {
                   child: Text(
                     data.title ?? "",
                     style: const Fonts(
-                            size: 22, height: 1, fontWeight: FontWeight.bold)
-                        .titleOpenSans,
+                      size: 22,
+                      height: 1,
+                      fontWeight: FontWeight.bold,
+                    ).titleOpenSans,
                   ),
                 ),
                 const SizedBox(height: 4),
@@ -70,11 +72,11 @@ class JobCard extends StatelessWidget {
                         data.date ?? "",
                         textAlign: TextAlign.end,
                         style: const Fonts(
-                                size: 12,
-                                height: 1,
-                                color: AppColor.articleText,
-                                fontWeight: FontWeight.w200)
-                            .titleNunito,
+                          size: 12,
+                          height: 1,
+                          color: AppColor.articleText,
+                          fontWeight: FontWeight.w200,
+                        ).titleNunito,
                       ),
                     ],
                   ),

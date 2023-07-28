@@ -32,10 +32,15 @@ class JobHistory extends StatelessWidget {
             child: RichText(
                 softWrap: true,
                 textAlign: TextAlign.center,
-                text: const TextSpan(
+                text: TextSpan(
                     text: Dictionary.jobDescription,
-                    style: TextStyle(fontSize: 16, color: Colors.black),
-                    children: <InlineSpan>[
+                    style: Fonts(
+                      size: 16,
+                      height: 1.0,
+                      color: AppColor.articleText.withOpacity(0.8),
+                      fontWeight: FontWeight.w500,
+                    ).titleOpenSans,
+                    children: const <InlineSpan>[
                       TextSpan(
                         text: Dictionary.github,
                         style: TextStyle(
@@ -49,6 +54,7 @@ class JobHistory extends StatelessWidget {
           children: [
             JobCard(data: JobConstants.jobs[0]),
             JobCard(data: JobConstants.jobs[1]),
+            JobCard(data: JobConstants.jobs[2]),
           ],
         ),
       ],
