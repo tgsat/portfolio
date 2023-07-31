@@ -57,8 +57,8 @@ class JobCard extends StatelessWidget {
                     fonts: const Fonts(
                       size: 14,
                       height: 1,
-                      fontWeight: FontWeight.w300,
-                      color: AppColor.black,
+                      fontWeight: FontWeight.w400,
+                      color: AppColor.articleText,
                     ).titleOpenSans,
                   ),
                 ),

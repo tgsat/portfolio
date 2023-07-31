@@ -24,79 +24,89 @@ class ActionHomePage extends StatelessWidget {
         padding:
             EdgeInsets.symmetric(horizontal: 10, vertical: isMobile ? 20 : 0),
         child: TextButton(
-            onPressed: () {
-              if (isMobile) Navigator.pop(context);
-              sc.animateTo(50,
-                  duration: Duration(milliseconds: scrollDur),
-                  curve: Curves.easeIn);
-            },
-            child: Text(Dictionary.about,
-                style: const Fonts(
-                        color: AppColor.primaryColor,
-                        fontWeight: FontWeight.w400,
-                        size: AppSize.textMedium,
-                        height: 1)
-                    .titleOswald)),
+          onPressed: () {
+            if (isMobile) Navigator.pop(context);
+            sc.animateTo(50,
+                duration: Duration(milliseconds: scrollDur),
+                curve: Curves.easeIn);
+          },
+          child: Text(
+            Dictionary.about,
+            style: const Fonts(
+              color: AppColor.primaryColor,
+              fontWeight: FontWeight.w400,
+              size: AppSize.textMedium,
+              height: 1,
+            ).titleOswald,
+          ),
+        ),
       ),
       Padding(
         padding:
             EdgeInsets.symmetric(horizontal: 10, vertical: isMobile ? 20 : 0),
         child: TextButton(
-            onPressed: () {
-              if (isMobile) Navigator.pop(context);
-              sc.animateTo(
-                500,
-                duration: Duration(milliseconds: scrollDur),
-                curve: Curves.easeIn,
-              );
-            },
-            child: Text(Dictionary.skill,
-                style: const Fonts(
-                        color: AppColor.primaryColor,
-                        fontWeight: FontWeight.w400,
-                        size: AppSize.textMedium,
-                        height: 1)
-                    .titleOswald)),
+          onPressed: () {
+            if (isMobile) Navigator.pop(context);
+            sc.animateTo(
+              575,
+              duration: Duration(milliseconds: scrollDur),
+              curve: Curves.easeIn,
+            );
+          },
+          child: Text(Dictionary.skill,
+              style: const Fonts(
+                color: AppColor.primaryColor,
+                fontWeight: FontWeight.w400,
+                size: AppSize.textMedium,
+                height: 1,
+              ).titleOswald),
+        ),
       ),
       Padding(
         padding:
             EdgeInsets.symmetric(horizontal: 10, vertical: isMobile ? 20 : 0),
         child: TextButton(
-            onPressed: () {
-              if (isMobile) Navigator.pop(context);
-              sc.animateTo(
-                isMobile ? 900 : 1000,
-                duration: Duration(milliseconds: scrollDur),
-                curve: Curves.easeIn,
-              );
-            },
-            child: Text(Dictionary.work,
-                style: const Fonts(
-                        color: AppColor.primaryColor,
-                        fontWeight: FontWeight.w400,
-                        size: AppSize.textMedium,
-                        height: 1)
-                    .titleOswald)),
+          onPressed: () {
+            if (isMobile) Navigator.pop(context);
+            sc.animateTo(
+              isMobile ? 1000 : 1255,
+              duration: Duration(milliseconds: scrollDur),
+              curve: Curves.easeIn,
+            );
+          },
+          child: Text(
+            Dictionary.work,
+            style: const Fonts(
+              color: AppColor.primaryColor,
+              fontWeight: FontWeight.w400,
+              size: AppSize.textMedium,
+              height: 1,
+            ).titleOswald,
+          ),
+        ),
       ),
       Padding(
         padding:
             EdgeInsets.symmetric(horizontal: 10, vertical: isMobile ? 20 : 0),
         child: TextButton(
-            onPressed: () {
-              if (isMobile) Navigator.pop(context);
-              sc.animateTo(
-                1550,
-                duration: Duration(milliseconds: scrollDur),
-                curve: Curves.easeIn,
-              );
-            },
-            child: Text(Dictionary.project,
-                style: const Fonts(
-                        color: AppColor.primaryColor,
-                        fontWeight: FontWeight.w400,
-                        size: AppSize.textMedium,
-                        height: 1)
-                    .titleOswald)),
+          onPressed: () {
+            if (isMobile) Navigator.pop(context);
+            sc.animateTo(
+              isMobile ? 1920 : 1650,
+              duration: Duration(milliseconds: scrollDur),
+              curve: Curves.easeIn,
+            );
+          },
+          child: Text(
+            Dictionary.project,
+            style: const Fonts(
+              color: AppColor.primaryColor,
+              fontWeight: FontWeight.w400,
+              size: AppSize.textMedium,
+              height: 1,
+            ).titleOswald,
+          ),
+        ),
       ),
     ];
   }

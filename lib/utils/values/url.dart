@@ -13,6 +13,8 @@ class Url {
       "https://www.linkedin.com/in/teguh-satrio-wicaksono-8a8831230/";
 
   // apk & web
+  static const smf = "";
+  static const pedulikami = "";
   static const signal =
       "https://drive.google.com/drive/folders/1InrOAUDkEWE077TCncsj2exNDk3kbbe1?usp=sharing";
   static const wish =
@@ -21,7 +23,7 @@ class Url {
   static const baf =
       "https://drive.google.com/drive/folders/1IzRDdOJjg94xgkRssK59tmbMZ5UTD5fZ?usp=sharing";
   static const grha =
-      "https://play.google.com/store/apps/details?id=com.grhagroup.hospitals";
+      "https://m.apkpure.com/id/rs-grha-kedoya/com.terakorp.grhakedoya";
   static const absensi =
       "https://play.google.com/store/apps/details?id=id.co.pragmainf.digitalpresence";
   static const linknet = "http://iao-linknet.pragmainf.tech/login";

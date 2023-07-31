@@ -13,29 +13,9 @@ class RecentProjects extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Padding(
-          padding: EdgeInsets.symmetric(vertical: 15, horizontal: 50),
-          child: Text(
-            Dictionary.lastestProject,
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-        Padding(
-          padding: EdgeInsets.symmetric(
-              horizontal: AppSize.isMobile(context) ? 40 : 80),
-          child: Text(
-            Dictionary.projectDescription,
-            style: Fonts(
-              size: 16,
-              height: 1.0,
-              color: AppColor.articleText.withOpacity(0.8),
-              fontWeight: FontWeight.w500,
-            ).titleOpenSans,
-            textAlign: TextAlign.center,
-          ),
+        const SectionPages(
+          title: Dictionary.lastestProject,
+          subtitle: Dictionary.projectDescription,
         ),
         const SizedBox(height: 10),
         Wrap(
@@ -43,48 +23,56 @@ class RecentProjects extends StatelessWidget {
             ProjectCard(
               data: ProjectConstants.projects[0],
               press: () {
-                js.context.callMethod('open', [Url.signal]);
+                // wbs smf
+                js.context.callMethod('open', [Url.smf]);
               },
             ),
             ProjectCard(
               data: ProjectConstants.projects[1],
               press: () {
-                js.context.callMethod('open', [Url.wish]);
+                // saber pungli
+                js.context.callMethod('open', [Url.pedulikami]);
               },
             ),
             ProjectCard(
               data: ProjectConstants.projects[2],
               press: () {
-                js.context.callMethod('open', [Url.qhse]);
+                // signal sbi
+                js.context.callMethod('open', [Url.signal]);
               },
             ),
             ProjectCard(
               data: ProjectConstants.projects[3],
               press: () {
-                js.context.callMethod('open', [Url.baf]);
+                // wish
+                js.context.callMethod('open', [Url.wish]);
               },
             ),
             ProjectCard(
               data: ProjectConstants.projects[4],
               press: () {
-                js.context.callMethod('open', [Url.grha]);
+                // sim qhse
+                js.context.callMethod('open', [Url.qhse]);
               },
             ),
             ProjectCard(
               data: ProjectConstants.projects[5],
               press: () {
-                js.context.callMethod('open', [Url.absensi]);
+                // grha kedoya
+                js.context.callMethod('open', [Url.grha]);
               },
             ),
             ProjectCard(
               data: ProjectConstants.projects[6],
               press: () {
-                js.context.callMethod('open', [Url.linkedin]);
+                // digital presence
+                js.context.callMethod('open', [Url.absensi]);
               },
             ),
             ProjectCard(
               data: ProjectConstants.projects[7],
               press: () {
+                // skip
                 js.context.callMethod('open', [Url.mayBank]);
               },
             ),

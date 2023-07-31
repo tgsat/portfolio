@@ -9,26 +9,25 @@ class Dictionary {
   static const String workProject = 'Work Projects';
   static const String lastestProject = 'Lastest Projects';
   static const String projectDescription =
-      "I've made several projects individually and in groups";
+      "I have created several projects individually or in groups, this is is a mobile project using flutter framework and website apps using laravel framework.";
   static const String jobHistory = 'Job History';
   static const String jobDescription =
-      "I have created several projects individually or in groups, this is is a mobile project and website using flutter and laravel framework, I'm currently learning swift, here's the ";
-  static const String github = "Github.";
+      "This is work history, I have joined several companies.";
   static const String headerName = 'Teguh Satrio Wicaksono';
   static const String tgsatt = 'tgsatt';
   static const String mobile = 'Mobile';
   static const String flutter = 'Flutter';
   static const String web = 'Website';
   static const String laravel = 'Laravel';
-  static const String geLink = 'Get Link';
+  static const String getLink = 'Link';
 
   static const String loading = 'loading...';
   static const String pleaseWait = 'Please Wait...';
 
   static const String welcomeToPortofolio = 'Welcome to my portfolio website!';
   static const String otherSkill = 'Other Skill';
-  static const String hiIam = "Hi!,I am\n" + headerName;
-  static const String hiIamTgsatt = "Hi!,I am " + tgsatt;
+  static const String hiIam = "Hi!,I am $headerName";
+  static const String hiIamTgsatt = "Hi!,I am $tgsatt";
   static const String resume = "Resume";
   static const String hireMe = "Hire Me";
   static const String aboutDescription =

@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/utils/utils.dart';
 
 class GeneralCard {
+  static BoxDecoration orange() => BoxDecoration(
+        borderRadius: BorderRadius.circular(50),
+        color: AppColor.primaryColor,
+      );
   static BoxDecoration shadow() => BoxDecoration(
         boxShadow: [
           BoxShadow(

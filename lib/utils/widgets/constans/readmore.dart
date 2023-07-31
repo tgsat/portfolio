@@ -21,8 +21,8 @@ class Readmore extends StatelessWidget {
       style: fonts,
       colorClickableText: AppColor.primaryColor,
       trimMode: TrimMode.Line,
-      trimCollapsedText: ' Show more',
-      trimExpandedText: ' Show less',
+      trimCollapsedText: ' More',
+      trimExpandedText: ' Less',
     );
   }
 }

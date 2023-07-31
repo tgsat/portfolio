@@ -19,38 +19,32 @@ class Social extends StatelessWidget {
             Tooltip(
               message: "Whatapps",
               child: SocialItem.icon(
-                press: () {
-                  js.context.callMethod('open', [Url.whatapps]);
-                },
-                imgURL: 'https://cdn-icons-png.flaticon.com/512/733/733585.png',
+                press: () async =>
+                    js.context.callMethod('open', [Url.whatapps]),
+                imgURL: AppImage.whatsapp,
               ),
             ),
             Tooltip(
               message: "Instagram",
               child: SocialItem.icon(
-                press: () async {
-                  js.context.callMethod('open', [Url.instagram]);
-                },
-                imgURL:
-                    'https://cdn-icons-png.flaticon.com/512/3955/3955024.png',
+                press: () async =>
+                    js.context.callMethod('open', [Url.instagram]),
+                imgURL: AppImage.instagram,
               ),
             ),
             Tooltip(
               message: "Linkedin",
               child: SocialItem.icon(
-                press: () async {
-                  js.context.callMethod('open', [Url.linkedin]);
-                },
-                imgURL: 'https://cdn-icons-png.flaticon.com/512/145/145807.png',
+                press: () async =>
+                    js.context.callMethod('open', [Url.linkedin]),
+                imgURL: AppImage.linkedin,
               ),
             ),
             Tooltip(
               message: "Github",
               child: SocialItem.icon(
-                press: () async {
-                  js.context.callMethod('open', [Url.github]);
-                },
-                imgURL: 'https://cdn-icons-png.flaticon.com/512/733/733609.png',
+                press: () async => js.context.callMethod('open', [Url.github]),
+                imgURL: AppImage.github,
               ),
             ),
           ],
