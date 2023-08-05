@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/utils/utils.dart';
 
-class SectionPages extends StatelessWidget {
+class SectionWidgets extends StatelessWidget {
   final String title;
   final String subtitle;
-  const SectionPages({
+  const SectionWidgets({
     super.key,
     required this.title,
     required this.subtitle,
@@ -26,7 +26,7 @@ class SectionPages extends StatelessWidget {
         ),
         Padding(
           padding: EdgeInsets.symmetric(
-              horizontal: AppSize.isMobile(context) ? 40 : 80),
+              horizontal: AppSize.isMobile(context) ? 50 : 13),
           child: Text(
             subtitle,
             style: Fonts(

@@ -42,15 +42,10 @@ dependencies:
   animated_snack_bar: ^0.3.1
   flutter_launcher_icons: ^0.13.1
 
-flutter_icons:
-  image_path: "assets/svg/launcher.svg"
-  android: false
-  ios: true
+flutter_launcher_icons:
   web:
     generate: true
-    image_path: "assets/svg/launcher.svg"
-    background_color: "#hexcode"
-    theme_color: "#hexcode"
+    image_path: "assets/images/launcher.png"
 
 dev_dependencies:
   flutter_test:

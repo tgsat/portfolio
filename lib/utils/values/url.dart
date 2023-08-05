@@ -12,21 +12,17 @@ class Url {
   static const linkedin =
       "https://www.linkedin.com/in/teguh-satrio-wicaksono-8a8831230/";
 
-  // apk & web
-  static const smf = "";
-  static const pedulikami = "";
-  static const signal =
-      "https://drive.google.com/drive/folders/1InrOAUDkEWE077TCncsj2exNDk3kbbe1?usp=sharing";
+  // apk & web app
+  static const smf = "https://github.com/tgsat/wbs-smf-mobile";
+  static const pedulikami = "https://github.com/tgsat/saber-pungli-mobile";
+  static const signal = "https://github.com/tgsat/sbi-mobile";
   static const wish =
       "https://play.google.com/store/apps/details?id=id.co.waskita.wish.wish";
-  static const qhse = "";
-  static const baf =
-      "https://drive.google.com/drive/folders/1IzRDdOJjg94xgkRssK59tmbMZ5UTD5fZ?usp=sharing";
   static const grha =
       "https://m.apkpure.com/id/rs-grha-kedoya/com.terakorp.grhakedoya";
   static const absensi =
       "https://play.google.com/store/apps/details?id=id.co.pragmainf.digitalpresence";
-  static const linknet = "http://iao-linknet.pragmainf.tech/login";
-  static const mayBank = "http://iao-mif.pragmainf.tech/login";
-  static const hsePln = "";
+  static const linknet = "link.pragmainf.id/login";
+  static const rucika = "ams-rucika.pragmainf.id/login";
+  static const kbn = "ams-kbn.pragmainf.id/login";
 }

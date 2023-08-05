@@ -20,7 +20,9 @@ class JobCard extends StatelessWidget {
               ? AppSize.maxWidth(context) / 4
               : AppSize.maxWidth(context) * 0.9,
           child: Padding(
-            padding: const EdgeInsets.all(20),
+            padding: AppSize.isMobile(context)
+                ? const EdgeInsets.all(20)
+                : const EdgeInsets.all(16),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -41,11 +43,11 @@ class JobCard extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Text(
                     data.address ?? "",
-                    style: const Fonts(
+                    style: Fonts(
                       size: 16,
                       height: 1,
                       fontWeight: FontWeight.w400,
-                      color: AppColor.black,
+                      color: AppColor.black.withOpacity(0.8),
                     ).titleOpenSans,
                   ),
                 ),
@@ -75,8 +77,8 @@ class JobCard extends StatelessWidget {
                           size: 12,
                           height: 1,
                           color: AppColor.articleText,
-                          fontWeight: FontWeight.w200,
-                        ).titleNunito,
+                          fontWeight: FontWeight.w400,
+                        ).titleOpenSans,
                       ),
                     ],
                   ),

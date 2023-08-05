@@ -10,7 +10,7 @@ class Dictionary {
   static const String lastestProject = 'Lastest Projects';
   static const String projectDescription =
       "I have created several projects individually or in groups, this is is a mobile project using flutter framework and website apps using laravel framework.";
-  static const String jobHistory = 'Job History';
+  static const String jobHistory = 'Work History';
   static const String jobDescription =
       "This is work history, I have joined several companies.";
   static const String headerName = 'Teguh Satrio Wicaksono';

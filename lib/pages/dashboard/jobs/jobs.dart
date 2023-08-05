@@ -10,7 +10,7 @@ class JobHistory extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const SectionPages(
+        const SectionWidgets(
           title: Dictionary.jobHistory,
           subtitle: Dictionary.jobDescription,
         ),

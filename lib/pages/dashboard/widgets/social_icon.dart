@@ -59,6 +59,7 @@ class SocialItem {
       FloatingActionButton.small(
         onPressed: press,
         backgroundColor: Colors.transparent,
+        elevation: 0,
         child:
             Image.network(imgURL ?? AppImage.emptyImage, height: 45, width: 45),
       );

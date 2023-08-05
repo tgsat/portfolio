@@ -22,7 +22,9 @@ class ProjectCard extends StatelessWidget {
               ? AppSize.maxWidth(context) / 4
               : AppSize.maxWidth(context) * 0.9,
           child: Padding(
-            padding: const EdgeInsets.all(20),
+            padding: AppSize.isMobile(context)
+                ? const EdgeInsets.all(20)
+                : const EdgeInsets.all(16),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -45,7 +47,7 @@ class ProjectCard extends StatelessWidget {
                         const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                     decoration: GeneralCard.orange(),
                     child: Text(
-                      data.section ?? "",
+                      Dictionary.getLink,
                       style: const Fonts(
                         size: 14,
                         height: 1,
@@ -81,7 +83,7 @@ class ProjectCard extends StatelessWidget {
                                 size: 12,
                                 height: 1,
                                 color: AppColor.articleText,
-                                fontWeight: FontWeight.w200)
+                                fontWeight: FontWeight.w400)
                             .titleOpenSans,
                       ),
                     ],
