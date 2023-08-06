@@ -32,13 +32,6 @@ class ProjectConstants {
     ),
     ProjectModel(
       action: '#',
-      title: 'SIM QHSE',
-      description:
-          "This application is for Sistem Informasi Management Nindya Karya Quality, Health, Safety and Environment management.",
-      date: "Mobile Flutter",
-    ),
-    ProjectModel(
-      action: '#',
       title: 'GRHA Kedoya',
       description:
           "This application is for RS Grha Kedoya Hospitals jakarta, This mobile application is an alternative for patients to get information about hospitals and register directly online.",
