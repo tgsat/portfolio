@@ -6,7 +6,7 @@ class ProjectConstants {
       action: '#',
       title: 'WBS SMF',
       description:
-          "The Violation Reporting System (WBS), is a management facility for reporting on alleged violations that occur within the environment or involve internal parties at PT Sarana Multigriya Financial (Persero). Every report of a violation committed is guaranteed the confidentiality of the identity and rights of the Reporter.",
+          "The Violation Reporting System (Whistle Blowing System), is a management facility for reporting on alleged violations that occur within the environment or involve internal parties at PT Sarana Multigriya Financial (Persero). Every report of a violation committed is guaranteed the confidentiality of the identity and rights of the Reporter.",
       date: "Mobile Flutter",
     ),
     ProjectModel(

@@ -1,15 +1,20 @@
-import 'package:animated_snack_bar/animated_snack_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:portfolio/utils/utils.dart';
 
-class AlertPages {
-  static AnimatedSnackBar isMaterial(BuildContext context,
-          {String? title, AnimatedSnackBarType? type}) =>
-      AnimatedSnackBar.material(
-        title ?? "",
-        type: type ?? AnimatedSnackBarType.error,
-        mobilePositionSettings:
-            const MobilePositionSettings(topOnAppearance: 100),
-        mobileSnackBarPosition: MobileSnackBarPosition.top,
-        desktopSnackBarPosition: DesktopSnackBarPosition.topCenter,
-      );
+class AlertPage extends StatelessWidget {
+  const AlertPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+          color: AppColor.primaryColor,
+          width: AppSize.maxWidth(context),
+          height: AppSize.maxHeight(context),
+          child: Center(
+              child: GeneralLoading.spinKitWithText(
+            title: "Please connect to the internet!",
+          ))),
+    );
+  }
 }
