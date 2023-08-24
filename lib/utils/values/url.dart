@@ -6,7 +6,7 @@ class Url {
   static const mail =
       "https://api.whatsapp.com/send/?phone=628113936365&text&app_absent=0";
   static const resume =
-      "https://drive.google.com/file/d/1ROI0VARA2DL1-tcqAInWUkrp8KsqZ7Gx/view?usp=share_link";
+      "https://drive.google.com/file/d/165MuNj6BrzahdKDcSiSNqvk30v2citO5/view";
   static const hireMe =
       "https://www.linkedin.com/in/teguh-satrio-wicaksono-8a8831230/";
   static const linkedin =
