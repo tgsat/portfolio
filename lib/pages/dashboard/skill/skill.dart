@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/utils/utils.dart';
 
@@ -17,7 +18,16 @@ class SkillWidget {
               padding: AppSize.isMobile(context)
                   ? const EdgeInsets.all(8.0)
                   : const EdgeInsets.all(30.0),
-              child: Image.network(url ?? AppImage.emptyImage),
+              child: CachedNetworkImage(
+                imageUrl: url!,
+                placeholder: (context, url) => Padding(
+                    padding: const EdgeInsets.all(12),
+                    child: GeneralLoading.fadingCircle()),
+                errorWidget: (context, url, error) => const Icon(
+                    Icons.error_outline,
+                    color: AppColor.primaryColor),
+              ),
+              // Image.network(url ?? AppImage.emptyImage),
             ),
           ),
         ),

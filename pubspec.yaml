@@ -44,6 +44,7 @@ dependencies:
   # Providers
   connectivity_plus: 2.3.0
   get: ^4.6.5
+  cached_network_image: ^3.2.3
 
 flutter_launcher_icons:
   web:

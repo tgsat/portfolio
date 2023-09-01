@@ -50,4 +50,16 @@ class GeneralLoading {
                   .titleNunito)
         ],
       );
+
+  static SpinKitFadingCircle fadingCircle() => SpinKitFadingCircle(
+        itemBuilder: (BuildContext context, int index) {
+          return DecoratedBox(
+            decoration: BoxDecoration(
+              color: index.isEven
+                  ? AppColor.articleText.withOpacity(0.8)
+                  : AppColor.articleText,
+            ),
+          );
+        },
+      );
 }

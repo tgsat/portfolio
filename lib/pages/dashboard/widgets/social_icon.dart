@@ -1,5 +1,6 @@
 import 'dart:js' as js;
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/utils/utils.dart';
 
@@ -60,7 +61,20 @@ class SocialItem {
         onPressed: press,
         backgroundColor: Colors.transparent,
         elevation: 0,
-        child:
-            Image.network(imgURL ?? AppImage.emptyImage, height: 45, width: 45),
+        child: CachedNetworkImage(
+          imageUrl: imgURL!,
+          height: 45,
+          width: 45,
+          placeholder: (context, url) => Padding(
+              padding: const EdgeInsets.all(12),
+              child: GeneralLoading.fadingCircle()),
+          errorWidget: (context, url, error) =>
+              const Icon(Icons.error_outline, color: AppColor.primaryColor),
+        ),
+        // Image.network(
+        //   imgURL ?? AppImage.emptyImage,
+        //   height: 45,
+        //   width: 45,
+        // ),
       );
 }
