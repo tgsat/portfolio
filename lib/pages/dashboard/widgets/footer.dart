@@ -7,27 +7,48 @@ class Footer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const Text('© Copyright 2022'),
-        InkWell(
-          onTap: press,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text('Built with ❤ by '),
-              InkWell(
-                onTap: () {},
-                child: const Text('tgsatt',
-                    style: TextStyle(
-                      height: 1,
-                      color: AppColor.primaryColor,
-                    )),
-              ),
-            ],
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: const BoxDecoration(color: AppColor.primaryColor),
+      child: Column(
+        children: [
+          Text(
+            '© Copyright 2022',
+            style: const Fonts(
+              size: 14,
+              height: 1,
+              fontWeight: FontWeight.w400,
+              color: AppColor.white,
+            ).titleOpenSans,
           ),
-        )
-      ],
+          InkWell(
+            onTap: press,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Built with ❤ by ',
+                  style: const Fonts(
+                    size: 14,
+                    height: 1,
+                    fontWeight: FontWeight.w400,
+                    color: AppColor.white,
+                  ).titleOpenSans,
+                ),
+                Text(
+                  'tgsatt',
+                  style: const Fonts(
+                    size: 14,
+                    height: 1,
+                    fontWeight: FontWeight.w400,
+                    color: AppColor.white,
+                  ).titleOpenSans,
+                ),
+              ],
+            ),
+          )
+        ],
+      ),
     );
   }
 }
