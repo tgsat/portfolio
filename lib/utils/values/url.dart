@@ -1,6 +1,6 @@
 class Url {
   static const whatapps =
-      "https://api.whatsapp.com/send/?phone=628113936365&text&app_absent=0";
+      "https://api.whatsapp.com/send/?phone=6289688180438&text&app_absent=0";
   static const instagram = "https://www.instagram.com/sstr.io_/";
   static const github = "https://github.com/tgsat/";
   static const mail =
